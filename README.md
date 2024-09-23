@@ -39,6 +39,9 @@ Before you start, ensure you have the following installed on your system:
    git clone https://github.com/nf271100/todo-app.git
    cd todo-app
 
+2. Install dependencies:
+  ```bash
+   npm install
 
 
 
