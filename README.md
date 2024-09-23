@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# To-Do List Application
+
+This project is a fully functional **To-Do List** web application built using **Next.js**, **TypeScript**, and **MongoDB**. It allows users to manage tasks efficiently by adding, editing, deleting, and filtering tasks. Data is persisted using MongoDB, ensuring tasks are saved across sessions.
+
+## Features
+
+- **Add Task**: Easily add new tasks to your list.
+- **Mark Complete/Incomplete**: Toggle tasks between completed and incomplete status.
+- **Edit Tasks**: Modify existing tasks within the application.
+- **Delete Tasks**: Remove tasks you no longer need.
+- **Filter Tasks**: View tasks based on their status (all, completed, or incomplete).
+- **Validation**: Prevents empty or duplicate tasks from being added.
+- **Persistent Data**: Task data is saved in MongoDB and persists across sessions.
+- **Unit Testing**: Includes unit tests using Jest and React Testing Library for core functionality.
+
+## Technologies Used
+
+- **Next.js**: React framework for building the app with server-side rendering.
+- **TypeScript**: Ensures type safety and enhances development experience.
+- **MongoDB**: Database used to store tasks persistently.
+- **Tailwind CSS**: Utility-first CSS framework for styling the user interface.
+- **React Icons**: Adds icons to the application (edit, delete, complete).
+- **Jest & React Testing Library**: For unit testing and verifying core functionality.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Before you start, ensure you have the following installed on your system:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Node.js**: [Download Node.js](https://nodejs.org)
+- **MongoDB**: [Set up MongoDB](https://www.mongodb.com/atlas/database)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   git clone https://github.com/yourusername/todo-app.git
+   cd todo-app
