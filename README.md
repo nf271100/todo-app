@@ -33,24 +33,37 @@ Before you start, ensure you have the following installed on your system:
 
 ### Installation
 
-1. Clone the repository:                ```bash
-   git clone https://github.com/nf271100/todo-app.git
-   cd todo-app
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/nf271100/todo-app.git
+    cd todo-app
+    ```
+
 2. Install dependencies:
-3. Set up your MongoDB URI in the .env.local file:
+
+    ```bash
+    npm install
+    ```
+
+3. Set up your MongoDB URI in the `.env.local` file:
+
+    ```bash
+    MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/todo-app?retryWrites=true&w=majority
+    ```
+
 4. Run the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the app in action.
+
 5. Testing:
-To run the unit tests:
 
+    To run the unit tests:
 
-
-   
-
-6. Install dependencies:
-  ```bash
-   npm install
-
-3.Set up your MongoDB URI in the .env.local file:
-```bash
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/todo-app?retryWrites=true&w=majority
-
+    ```bash
+    npm run test
+    ```
