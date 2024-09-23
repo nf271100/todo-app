@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,7 +19,58 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Update font to Poppins */
+  @apply bg-green-100 font-sans;
+}
+
+/* Animation for the To-Do List title */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #171717;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  animation: popIn 1s ease-in-out;
+}
+
+h1 span {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05); /* Slight scaling on hover for animation */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Add box-shadow on hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Shrink a bit when clicked */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow when clicked */
 }
 
 @layer utilities {
