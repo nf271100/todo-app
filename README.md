@@ -37,7 +37,7 @@ Before you start, ensure you have the following installed on your system:
 
    ```bash
    git clone https://github.com/nf271100/todo-app.git
-cd todo-app
+   cd todo-app
 
 
 
