@@ -33,7 +33,7 @@ Before you start, ensure you have the following installed on your system:
 
 ### Installation
 
-1. Clone the repository:```bash
+1. Clone the repository:                ```bash
    git clone https://github.com/nf271100/todo-app.git
    cd todo-app
 2. Install dependencies:
