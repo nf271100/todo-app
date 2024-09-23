@@ -33,13 +33,20 @@ Before you start, ensure you have the following installed on your system:
 
 ### Installation
 
-1. Clone the repository:
-
-   ```bash
+1. Clone the repository:```bash
    git clone https://github.com/nf271100/todo-app.git
    cd todo-app
-
 2. Install dependencies:
+3. Set up your MongoDB URI in the .env.local file:
+4. Run the development server:
+5. Testing:
+To run the unit tests:
+
+
+
+   
+
+6. Install dependencies:
   ```bash
    npm install
 
