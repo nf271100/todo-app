@@ -47,6 +47,8 @@ export default function TodoList() {
       setTasks([...tasks, newTask]);
     }
   };
+
+  
 // Toggle task completion
 const toggleTask = async (taskId: string, completed: boolean) => {
   try {
